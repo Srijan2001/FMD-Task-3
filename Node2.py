@@ -41,7 +41,6 @@ def callback(data):
 def listener():
 	rospy.init_node("Node2",anonymous=True)
 	rospy.Subscriber("/image_raw",Image,callback)	
-	rospy.Subscriber("/image_raw",Image,callback)
 	rospy.loginfo("Subscriber is starting")		
 	rospy.spin()
 
